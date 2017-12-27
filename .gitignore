@@ -1,0 +1,5 @@
+/vendor
+/skeleton
+composer.lock
+.htaccess
+error_log

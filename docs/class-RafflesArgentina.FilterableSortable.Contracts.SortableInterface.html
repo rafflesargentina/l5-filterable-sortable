@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Interface RafflesArgentina\FilterableSortable\Contracts\SortableInterface</title>
+
+	<link rel="stylesheet" href="resources/style.css?3901564645">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-RafflesArgentina.html">RafflesArgentina<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-RafflesArgentina.FilterableSortable.html">FilterableSortable<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-RafflesArgentina.FilterableSortable.Contracts.html">Contracts</a>
+						</li>
+				<li><a href="namespace-RafflesArgentina.FilterableSortable.Exceptions.html">Exceptions</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-RafflesArgentina.FilterableSortable.Contracts.FilterableInterface.html">FilterableInterface</a></li>
+				<li class="active"><a href="class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html">SortableInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-RafflesArgentina.FilterableSortable.Contracts.html" title="Summary of RafflesArgentina\FilterableSortable\Contracts"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface SortableInterface</h1>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-RafflesArgentina.FilterableSortable.QuerySorters.html">RafflesArgentina\FilterableSortable\QuerySorters</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-RafflesArgentina.html">RafflesArgentina</a>\<a href="namespace-RafflesArgentina.FilterableSortable.html">FilterableSortable</a>\<a href="namespace-RafflesArgentina.FilterableSortable.Contracts.html">Contracts</a><br>
+		
+
+		<b>Located at</b> <a href="source-class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html#7-73" title="Go to source code">Contracts/SortableInterface.php</a><br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="order" id="_order">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_order">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html#9-14" title="Go to source code">order</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get order from request or fallback to default.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get order from request or fallback to default.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="apply" id="_apply">
+
+		<td class="attributes"><code>
+			 public 
+			Illuminate\Database\Eloquent\Builder
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_apply">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html#16-23" title="Go to source code">apply</a>( <span>Illuminate\Database\Eloquent\Builder <var>$builder</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Apply the sorter to the builder.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Apply the sorter to the builder.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$builder</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Illuminate\Database\Eloquent\Builder</code><br>Builder<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="orderBy" id="_orderBy">
+
+		<td class="attributes"><code>
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_orderBy">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html#25-30" title="Go to source code">orderBy</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get orderBy key from request or fallback to default.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get orderBy key from request or fallback to default.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOrderKey" id="_getOrderKey">
+
+		<td class="attributes"><code>
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOrderKey">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html#32-37" title="Go to source code">getOrderKey</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get order key.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get order key.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getOrderByKey" id="_getOrderByKey">
+
+		<td class="attributes"><code>
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getOrderByKey">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html#39-44" title="Go to source code">getOrderByKey</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get orderBy key.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get orderBy key.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefaultOrder" id="_getDefaultOrder">
+
+		<td class="attributes"><code>
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefaultOrder">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html#46-51" title="Go to source code">getDefaultOrder</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get default order value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get default order value.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="listOrderByKeys" id="_listOrderByKeys">
+
+		<td class="attributes"><code>
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_listOrderByKeys">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html#53-58" title="Go to source code">listOrderByKeys</a>( )</code>
+
+		<div class="description short">
+			
+<p>Pluck all sorters from class methods.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Pluck all sorters from class methods.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>array<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAppliedSorters" id="_getAppliedSorters">
+
+		<td class="attributes"><code>
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAppliedSorters">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html#60-65" title="Go to source code">getAppliedSorters</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get applied sorters from request or fallback to default.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get applied sorters from request or fallback to default.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>array<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDefaultOrderBy" id="_getDefaultOrderBy">
+
+		<td class="attributes"><code>
+			 public static
+			string
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getDefaultOrderBy">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html#67-72" title="Go to source code">getDefaultOrderBy</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get default orderBy value.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get default orderBy value.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>string</code><br>string<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?3455626576"></script>
+<script src="elementlist.js?3839799822"></script>
+</body>
+</html>

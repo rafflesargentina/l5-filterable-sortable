@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="generator" content="ApiGen 2.8.0">
+
+	<title>Interface RafflesArgentina\FilterableSortable\Contracts\FilterableInterface</title>
+
+	<link rel="stylesheet" href="resources/style.css?3901564645">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+			<h3>Namespaces</h3>
+			<ul>
+				<li><a href="namespace-PHP.html">PHP</a>
+						</li>
+				<li class="active"><a href="namespace-RafflesArgentina.html">RafflesArgentina<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-RafflesArgentina.FilterableSortable.html">FilterableSortable<span></span></a>
+						<ul>
+				<li class="active"><a href="namespace-RafflesArgentina.FilterableSortable.Contracts.html">Contracts</a>
+						</li>
+				<li><a href="namespace-RafflesArgentina.FilterableSortable.Exceptions.html">Exceptions</a>
+						</li>
+							</ul></li></ul></li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-RafflesArgentina.FilterableSortable.Contracts.FilterableInterface.html">FilterableInterface</a></li>
+				<li><a href="class-RafflesArgentina.FilterableSortable.Contracts.SortableInterface.html">SortableInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text">
+		<input type="submit" value="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-RafflesArgentina.FilterableSortable.Contracts.html" title="Summary of RafflesArgentina\FilterableSortable\Contracts"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Interface FilterableInterface</h1>
+
+
+
+
+
+
+
+	<div>
+		<h4>Direct known implementers</h4>
+			<a href="class-RafflesArgentina.FilterableSortable.QueryFilters.html">RafflesArgentina\FilterableSortable\QueryFilters</a>
+	</div>
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-RafflesArgentina.html">RafflesArgentina</a>\<a href="namespace-RafflesArgentina.FilterableSortable.html">FilterableSortable</a>\<a href="namespace-RafflesArgentina.FilterableSortable.Contracts.html">Contracts</a><br>
+		
+
+		<b>Located at</b> <a href="source-class-RafflesArgentina.FilterableSortable.Contracts.FilterableInterface.html#7-31" title="Go to source code">Contracts/FilterableInterface.php</a><br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="apply" id="_apply">
+
+		<td class="attributes"><code>
+			 public 
+			Illuminate\Database\Eloquent\Builder
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_apply">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.FilterableInterface.html#9-16" title="Go to source code">apply</a>( <span>Illuminate\Database\Eloquent\Builder <var>$builder</var></span> )</code>
+
+		<div class="description short">
+			
+<p>Apply the filters to the builder.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Apply the filters to the builder.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$builder</var></dt>
+					<dd></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>Illuminate\Database\Eloquent\Builder</code><br>Builder<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="filters" id="_filters">
+
+		<td class="attributes"><code>
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_filters">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.FilterableInterface.html#18-23" title="Go to source code">filters</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get all request data.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get all request data.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>array<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getAppliedFilters" id="_getAppliedFilters">
+
+		<td class="attributes"><code>
+			 public static
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_getAppliedFilters">#</a>
+		<code><a href="source-class-RafflesArgentina.FilterableSortable.Contracts.FilterableInterface.html#25-30" title="Go to source code">getAppliedFilters</a>( )</code>
+
+		<div class="description short">
+			
+<p>Get applied filters from request.</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			
+<p>Get applied filters from request.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code><br>array<br>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen 2.8.0</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?3455626576"></script>
+<script src="elementlist.js?3839799822"></script>
+</body>
+</html>
