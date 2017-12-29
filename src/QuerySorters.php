@@ -108,7 +108,7 @@ abstract class QuerySorters implements SortableInterface
      */
     public static function getOrderKey()
     {
-        return static::$order ?: 'order';
+        return static::$orderKey ?: 'order';
     }
 
     /**
@@ -118,7 +118,7 @@ abstract class QuerySorters implements SortableInterface
      */
     public static function getOrderByKey()
     {
-        return static::$orderBy ?: 'orderBy';
+        return static::$orderByKey ?: 'orderBy';
     }
 
     /**
