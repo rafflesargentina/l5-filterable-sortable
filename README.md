@@ -17,7 +17,7 @@ $ composer require rafflesargentina/l5-filterable-sortable
 
 ## Usage
 
-Add FilterableSortableTrait to your Eloquent model so you can make use of filter() and sorter() scopes. Both apply clauses to the Builder intance, that you must define as functions in separate classes. So, add $filters and $sorters protected properties to your model to define those classes location.
+Add FilterableSortableTrait to your Eloquent model so you can make use of filter() and sorter() scopes. Both apply clauses to the Builder intance that you must define as functions in separate classes. So you must add $filters and $sorters properties to your model to set those classes.
 
 Example:
 
@@ -37,9 +37,9 @@ class Article extends Model
 {
     use FilterableSortableTrait;
 
-    protected $filters = ArticleFilters::class;
+    public $filters = ArticleFilters::class;
 
-    protected $sorters = ArticleSorters::class;
+    public $sorters = ArticleSorters::class;
 
     // ...
 }
@@ -47,7 +47,7 @@ class Article extends Model
 
 ### QueryFilters
 
-Create a class that extends QueryFilters, and define public methods named after each request input data you want to use as a chained query filter. You can employ or even chain any where or conditional clause inside functions, as long as they return a Builder instance.
+Create a class that extends QueryFilters and define methods named after each request data you want to use as a chained query filter. You can employ any logic inside functions, as long as they return a Builder instance.
 
 Example:
 
@@ -82,7 +82,7 @@ You can also access the class method getAppliedFilters() statically, to get an a
 
 ### QuerySorters
 
-Create a class that extends QuerySorters, and define public methods named after each request input data you want to use as a chained query sorter. You can employ or even chain any where or conditional clause you wish inside functions, as long as they return a Builder instance. Default order direction and default order by key name must be set bhrough $defaultOrder and $defaultOrderByKey protected static properties. Optionally you can define order and order by key name, through $order and $orderBy protected static properties.
+Create a class that extends QuerySorters, and define public methods named after each request data you want to use as a chained query sorter. You can employ any logic inside functions, as long as they return a Builder instance. Default order and default orderBy must be set through $defaultOrder and $defaultOrderBy static properties. Optionally you can define order and orderBy keys through $orderKey and $orderByKey static properties.
 
 Example:
 
@@ -95,17 +95,17 @@ use RafflesArgentina\FilterableSortable\QuerySorters;
 
 class ArticleSorters extends QuerySorters
 {
-    // These protected properties are optional:
+    // These properties are optional:
 
-    protected static $order = 'orden'; // Fallback value is 'order'
+    protected static $orderKey = 'orden'; // Fallback value is 'order'
 
-    protected static $orderBy = 'ordenarPor'; // Fallback value is 'orderBy'
+    protected static $orderByKey = 'ordenarPor'; // Fallback value is 'orderBy'
 
-    // And there are NOT:
+    // And there are mandatory:
 
     protected static $defaultOrder = 'asc';
 
-    protected static $defaultOrderByKey = 'title';
+    protected static $defaultOrderBy = 'title';
 
     public function title()
     {
@@ -121,9 +121,9 @@ class ArticleSorters extends QuerySorters
 }
 ```
 
-Additionally you access these static class methods to get sorter class protected data: getDefaultOrder(), getDefaultOrderByKey(). Access getAppliedSorters() to get applied sorters from request. Or listOrderByKeys() to populate a dropdown selector.
+Also you can access these static class methods to get sorter class protected data: getOrderKey(), getOrderByKey(), getDefaultOrder(), getDefaultOrderBy(). Use getAppliedSorters() to get applied sorters from request. Or listOrderByKeys() to populate a dropdown selector.
 
-You can get filtered and sortered records for your model, from controller or anywhere you want like this:
+You can get filtered and sortered records from your model from controller or anywhere you want like this:
 
 ``` php
 // ...
