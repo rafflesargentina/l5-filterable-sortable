@@ -43,7 +43,7 @@ trait FilterableSortableTrait
      *
      * @throws FilterableSortableException
      */
-    public function scopeSorter($query)
+    public function scopeSort($query)
     {
         if (!$this->sorters) {
 

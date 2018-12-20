@@ -2,8 +2,8 @@
 
 namespace RafflesArgentina\FilterableSortable;
 
-use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Http\Request;
 
 use RafflesArgentina\FilterableSortable\Contracts\FilterableInterface;
 
@@ -79,10 +79,6 @@ abstract class QueryFilters implements FilterableInterface
             }
         );
 
-        $applied = \Illuminate\Support\Facades\Request::only($filteredMethods);
-
-        $applied = array_filter($applied);
-
-        return $applied;
+        return \Illuminate\Support\Facades\Request::only($filteredMethods);
     }
 }
