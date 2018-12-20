@@ -48,12 +48,15 @@ class FilterableSortableTest extends TestCase
     {
         factory(\RafflesArgentina\FilterableSortable\Models\User::class, 100)->create();
         $results = $this->get('/?name=robert');
-        $this->assertTrue(count($results) > 0 && count($results) < 100);
+        $data = $results->getData();
+        $this->assertTrue(count($data) < 100);
     }
 
     function testResultsCanBeSorted()
     {
-        $results = factory(\RafflesArgentina\FilterableSortable\Models\User::class, 100)->create();
-        $this->assertTrue(count($results) === 100);
+        factory(\RafflesArgentina\FilterableSortable\Models\User::class, 100)->create();
+        $results = $this->get('/');
+        $data = $results->getData();
+        $this->assertTrue(count($data) === 100);
     }
 }
