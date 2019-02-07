@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="FilterableSortable Test Suite" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="1.543758">
-    <testsuite name="RafflesArgentina\FilterableSortable\FilterableSortableTest" file="/var/www/l5-filterable-sortable/tests/FilterableSortableTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="1.543758">
-      <testcase name="testResultsCanBeFiltered" class="RafflesArgentina\FilterableSortable\FilterableSortableTest" classname="RafflesArgentina.FilterableSortable.FilterableSortableTest" file="/var/www/l5-filterable-sortable/tests/FilterableSortableTest.php" line="47" assertions="1" time="0.942514"/>
-      <testcase name="testResultsCanBeSorted" class="RafflesArgentina\FilterableSortable\FilterableSortableTest" classname="RafflesArgentina.FilterableSortable.FilterableSortableTest" file="/var/www/l5-filterable-sortable/tests/FilterableSortableTest.php" line="55" assertions="1" time="0.601244"/>
+  <testsuite name="FilterableSortable Test Suite" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="1.749227">
+    <testsuite name="RafflesArgentina\FilterableSortable\FilterableSortableTest" file="/var/www/l5-filterable-sortable/tests/FilterableSortableTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="1.749227">
+      <testcase name="testResultsCanBeFiltered" class="RafflesArgentina\FilterableSortable\FilterableSortableTest" classname="RafflesArgentina.FilterableSortable.FilterableSortableTest" file="/var/www/l5-filterable-sortable/tests/FilterableSortableTest.php" line="47" assertions="1" time="1.113980"/>
+      <testcase name="testResultsCanBeSorted" class="RafflesArgentina\FilterableSortable\FilterableSortableTest" classname="RafflesArgentina.FilterableSortable.FilterableSortableTest" file="/var/www/l5-filterable-sortable/tests/FilterableSortableTest.php" line="55" assertions="1" time="0.635247"/>
     </testsuite>
   </testsuite>
 </testsuites>
