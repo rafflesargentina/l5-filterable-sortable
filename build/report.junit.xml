@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="FilterableSortable Test Suite" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.348452">
-    <testsuite name="RafflesArgentina\FilterableSortable\FilterableSortableTest" file="/Users/mpatronelli/Desarrollo/l5-filterable-sortable/tests/FilterableSortableTest.php" tests="2" assertions="2" errors="0" failures="0" skipped="0" time="0.348452">
-      <testcase name="testResultsCanBeFiltered" class="RafflesArgentina\FilterableSortable\FilterableSortableTest" classname="RafflesArgentina.FilterableSortable.FilterableSortableTest" file="/Users/mpatronelli/Desarrollo/l5-filterable-sortable/tests/FilterableSortableTest.php" line="47" assertions="1" time="0.240865"/>
-      <testcase name="testResultsCanBeSorted" class="RafflesArgentina\FilterableSortable\FilterableSortableTest" classname="RafflesArgentina.FilterableSortable.FilterableSortableTest" file="/Users/mpatronelli/Desarrollo/l5-filterable-sortable/tests/FilterableSortableTest.php" line="55" assertions="1" time="0.107587"/>
+  <testsuite name="FilterableSortable Test Suite" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="9.438738">
+    <testsuite name="RafflesArgentina\FilterableSortable\FilterableSortableTest" file="/Users/mpatronelli/Desarrollo/l5-filterable-sortable/tests/FilterableSortableTest.php" tests="2" assertions="2" errors="0" warnings="0" failures="0" skipped="0" time="9.438738">
+      <testcase name="testResultsCanBeFiltered" class="RafflesArgentina\FilterableSortable\FilterableSortableTest" classname="RafflesArgentina.FilterableSortable.FilterableSortableTest" file="/Users/mpatronelli/Desarrollo/l5-filterable-sortable/tests/FilterableSortableTest.php" line="47" assertions="1" time="4.770472"/>
+      <testcase name="testResultsCanBeSorted" class="RafflesArgentina\FilterableSortable\FilterableSortableTest" classname="RafflesArgentina.FilterableSortable.FilterableSortableTest" file="/Users/mpatronelli/Desarrollo/l5-filterable-sortable/tests/FilterableSortableTest.php" line="55" assertions="1" time="4.668266"/>
     </testsuite>
   </testsuite>
 </testsuites>

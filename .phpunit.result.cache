@@ -1,0 +1,1 @@
+C:37:"PHPUnit\Runner\DefaultTestResultCache":241:{a:2:{s:7:"defects";a:0:{}s:5:"times";a:2:{s:84:"RafflesArgentina\FilterableSortable\FilterableSortableTest::testResultsCanBeFiltered";d:4.77;s:82:"RafflesArgentina\FilterableSortable\FilterableSortableTest::testResultsCanBeSorted";d:4.668;}}}
