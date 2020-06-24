@@ -75,7 +75,7 @@ abstract class QuerySorters implements SortableInterface
     /**
      * Apply the sorter to the builder.
      *
-     * @param Builder $builder The builder instance.
+     * @param  Builder $builder The builder instance.
      *
      * @return Builder
      */
@@ -165,7 +165,7 @@ abstract class QuerySorters implements SortableInterface
         $order = static::getOrderKey();
         $orderBy = static::getOrderByKey();
 
-        $applied = \Illuminate\Support\Facades\Request::only($order, $orderBy);
+        $applied = request()->only($order, $orderBy);
 
         $applied = array_filter($applied);
 

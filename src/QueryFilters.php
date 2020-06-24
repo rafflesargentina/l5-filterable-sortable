@@ -36,7 +36,7 @@ abstract class QueryFilters implements FilterableInterface
     /**
      * Apply the filters to the builder.
      *
-     * @param Builder $builder The builder instance.
+     * @param  Builder $builder The builder instance.
      *
      * @return Builder
      */
@@ -79,6 +79,6 @@ abstract class QueryFilters implements FilterableInterface
             }
         );
 
-        return \Illuminate\Support\Facades\Request::only($filteredMethods);
+        return request()->only($filteredMethods);
     }
 }
